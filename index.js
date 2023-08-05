@@ -1,7 +1,7 @@
 const inputfield = document.getElementById('input')
 const showColors = document.getElementById('show-colors')
 
-let colorArray = []
+let colorArray = ['black']
 
 colorArray = JSON.parse(localStorage.getItem('color'))
 
