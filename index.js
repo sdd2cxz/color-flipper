@@ -33,13 +33,27 @@ color.addEventListener('click', function(e) {
     console.log(input.style.display)
     //e.target.style.visibility = "hidden"
 })
+function isColor(strColor){
+    var s = new Option().style;
+    s.color = strColor;
+    return s.color == strColor.toLowerCase();
+  }
 
 function addColor(){
-    colorArray.push(inputfield.value)
-    localStorage.setItem('color', JSON.stringify(colorArray))
-    location.reload()
-    console.log(colorArray)
+ if(!isColor(inputfield.value)){
+    console.log('e')
+ }
+ else{
+     colorArray.push(inputfield.value)
+     localStorage.setItem('color', JSON.stringify(colorArray))
+     location.reload()
+     console.log(colorArray)
+    }
+    
+        
+    
 }
+
 
 function removeColors(){
     colorArray = []
