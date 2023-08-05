@@ -28,7 +28,7 @@ color.addEventListener('click', function() {
     }
     
     console.log(input.style.display)
-    //e.target.style.visibility = "hidden"
+
 })
 // checks if value is a valid color
 function isColor(strColor){
